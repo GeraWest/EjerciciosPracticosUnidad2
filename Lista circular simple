@@ -1,1 +1,67 @@
 
+/**
+ *
+ * @author Rey Gerardo Avalos Mellado
+ * GTID0141
+ * 1224100509
+ * 
+ *
+ */
+public class ejercicios {
+
+    static class Nodo {
+        String dato;
+        Nodo siguiente;
+        public Nodo(String dato) { this.dato = dato; }
+    }
+
+    public static void main(String[] args) {
+        // Crear nodos
+        Nodo rojo = new Nodo("Rojo");
+        Nodo verde = new Nodo("Verde");
+        Nodo azul = new Nodo("Azul");
+        Nodo amarillo = new Nodo("Amarillo");
+
+        // Enlaces circulares
+        rojo.siguiente = verde;
+        verde.siguiente = azul;
+        azul.siguiente = amarillo;
+        amarillo.siguiente = rojo; // vuelve al primero
+
+        System.out.println("Lista circular inicial:");
+        mostrar(rojo);
+
+        // Insertar Morado entre Azul y Amarillo
+        Nodo morado = new Nodo("Morado");
+        morado.siguiente = azul.siguiente; 
+        azul.siguiente = morado;  
+        System.out.println("\nDespues de insertar 'Morado' entre Azul y Amarillo:");
+        mostrar(rojo);
+
+        // Eliminar Verde
+        Nodo aux = rojo;
+        while (aux.siguiente != rojo) {
+            if (aux.siguiente.dato.equals("Verde")) {
+                aux.siguiente = aux.siguiente.siguiente;
+                break;
+            }
+            aux = aux.siguiente;
+        }
+        System.out.println("\nDespues de eliminar 'Verde':");
+        mostrar(rojo);
+    }
+
+    public static void mostrar(Nodo inicio) {
+        Nodo actual = inicio;
+        if (actual == null) {
+            System.out.println("Lista vacia");
+            return;
+        }
+        do {
+            System.out.print("[" + actual.dato + "] → ");
+            actual = actual.siguiente;
+        } while (actual != inicio);
+        System.out.println("(regresa a " + inicio.dato + ")");
+    }
+}
+
