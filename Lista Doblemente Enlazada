@@ -1,0 +1,75 @@
+**
+ *
+ * @author Rey Gerardo Avalos Mellado
+ * GTID0141
+ * 1224100509
+ */
+public class ejercicios {
+
+    static class Nodo {
+        String dato;
+        Nodo anterior, siguiente;
+        public Nodo(String dato) { this.dato = dato; }
+    }
+
+    public static void main(String[] args) {
+        // Crear nodos
+        Nodo prog = new Nodo("Programacion");
+        Nodo mate = new Nodo("Matematicas");
+        Nodo ingles = new Nodo("Ingles");
+        Nodo fisica = new Nodo("Fisica");
+
+        // Enlazar
+        prog.siguiente = mate;
+        mate.anterior = prog;
+        mate.siguiente = ingles;
+        ingles.anterior = mate;
+        ingles.siguiente = fisica;
+        fisica.anterior = ingles;
+
+        System.out.println("Lista hacia adelante:");
+        mostrarAdelante(prog);
+
+        System.out.println("\nLista hacia atras:");
+        mostrarAtras(fisica);
+
+        // Insertar Historia al inicio
+        Nodo historia = new Nodo("Historia");
+        historia.siguiente = prog;
+        prog.anterior = historia;
+        prog = historia; // nuevo inicio
+        System.out.println("\nDespues de insertar 'Historia' al inicio:");
+        mostrarAdelante(prog);
+
+        // Eliminar Ingles
+        Nodo aux = prog;
+        while (aux != null) {
+            if (aux.dato.equals("Ingles")) {
+                if (aux.anterior != null) aux.anterior.siguiente = aux.siguiente;
+                if (aux.siguiente != null) aux.siguiente.anterior = aux.anterior;
+                break;
+            }
+            aux = aux.siguiente;
+        }
+        System.out.println("\nDespues de eliminar 'Ingles':");
+        mostrarAdelante(prog);
+    }
+
+    public static void mostrarAdelante(Nodo inicio) {
+        Nodo actual = inicio;
+        while (actual != null) {
+            System.out.print("[" + actual.dato + "] ↔ ");
+            actual = actual.siguiente;
+        }
+        System.out.println("NULL");
+    }
+
+    public static void mostrarAtras(Nodo fin) {
+        Nodo actual = fin;
+        while (actual != null) {
+            System.out.print("[" + actual.dato + "] ↔ ");
+            actual = actual.anterior;
+        }
+        System.out.println("NULL");
+    }
+}
