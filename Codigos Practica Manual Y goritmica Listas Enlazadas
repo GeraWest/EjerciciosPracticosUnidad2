@@ -1,1 +1,67 @@
+/**
+ *Lista Simplemente Enlazada 
+ * @author Rey Gerardo Avalos Mellado
+ * GTID0141
+ * 1224100509
+ */
+public class ejercicios {
 
+    static class Nodo {
+        String dato;
+        Nodo siguiente;
+        public Nodo(String dato) { this.dato = dato; }
+    }
+
+    public static void main(String[] args) {
+        // Crear nodos
+        Nodo ana = new Nodo("Ana");
+        Nodo benjamin = new Nodo("Benjamin");
+        Nodo carla = new Nodo("Carla");
+        Nodo diego = new Nodo("Diego");
+
+        // Enlazar
+        ana.siguiente = benjamin;
+        benjamin.siguiente = carla;
+        carla.siguiente = diego;
+        diego.siguiente = null;
+
+        System.out.println("Lista inicial:");
+        mostrar(ana);
+
+        // Insertar Elena entre Carla y Diego
+        Nodo elena = new Nodo("Elena");
+        elena.siguiente = carla.siguiente; 
+        carla.siguiente = elena;           
+        System.out.println("\nDespues de insertar 'Elena' entre Carla y Diego:");
+        mostrar(ana);
+
+        // Insertar Dalia al final
+        Nodo dalia = new Nodo("Dalia");
+        Nodo aux = ana;
+        while (aux.siguiente != null) aux = aux.siguiente;
+        aux.siguiente = dalia;
+        System.out.println("\nDespues de insertar 'Dalia' al final:");
+        mostrar(ana);
+
+        // Eliminar Benjamin
+        aux = ana;
+        while (aux.siguiente != null) {
+            if (aux.siguiente.dato.equals("Benjamin")) {
+                aux.siguiente = aux.siguiente.siguiente;
+                break;
+            }
+            aux = aux.siguiente;
+        }
+        System.out.println("\nDespues de eliminar 'BenjamIn':");
+        mostrar(ana);
+    }
+
+    public static void mostrar(Nodo cabeza) {
+        Nodo actual = cabeza;
+        while (actual != null) {
+            System.out.print("[" + actual.dato + "] → ");
+            actual = actual.siguiente;
+        }
+        System.out.println("NULL");
+    }
+}
