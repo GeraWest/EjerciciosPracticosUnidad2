@@ -1,0 +1,93 @@
+/**
+ *
+ * @author 1224100509
+ * GTID0141
+ * 1224100509
+ */
+public interface IStack <T> {
+    void push(T elements);
+    T pop();
+    T peek ();
+    boolean isEmpty();
+    
+}
+//////////////////////////////////////
+
+/**
+ *
+ * @author 1224100509
+ * GTID0141
+ * 1224100509
+ */
+public class StackArray <T> implements IStack <T> {
+      private T[] elements;
+    private int top;
+
+    @SuppressWarnings("unchecked")
+    public StackArray() {
+        elements = (T[]) new Object[30];
+        top = -1;
+    }
+
+    @SuppressWarnings("unchecked")
+    public StackArray(int size) {
+        elements = (T[]) new Object[size];
+        top = -1;
+    }
+
+    @Override
+    public void push(T element) {
+        if (top < elements.length - 1) {
+            top++;
+            elements[top] = element;
+        } else {
+            System.out.println("️ la pila esta llena");
+        }
+    }
+
+    @Override
+    public T pop() {
+        if (isEmpty()) {
+            System.out.println("️la pila esta vacia");
+            return null;
+        }
+        T removedElement = elements[top];
+        elements[top] = null;
+        top--;
+        System.out.println("Elemento eliminado: " + removedElement);
+        return removedElement;
+    }
+
+    @Override
+    public T peek() {
+        if (isEmpty()) {
+            System.out.println("️ la pila esta vacia");
+            return null;
+        }
+        System.out.println("Conociendo el último de la pila");
+        return elements[top];
+    }
+
+    @Override
+    public boolean isEmpty() {
+        return top == -1;
+    }
+}
+////////////////////////////////////////////
+/**
+ *
+ * @author 1224100509
+ * GTID0141
+ * 1224100509
+ */
+public class MainStack {
+    public static void main(String[] args) {
+        StackArray<String> nombres = new StackArray<>(5);
+        nombres.push("Messi");
+        nombres.push("Spiderman");
+        nombres.push("Luis Miguel");
+
+        System.out.println(nombres.pop());
+        System.out.println(nombres.pop());
+    }
+}
