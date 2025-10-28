@@ -1,4 +1,4 @@
-# 🧠 EjerPrácticosGuiados
+# 🧠 EjerciciosGuiados
 <!--  Rey Gerardo Avalos Mellado -->
 
 <p align="center">
@@ -29,10 +29,6 @@
 | Lista doblemente enlazada | [Lista Doblemente Enlazada](Lista%20Doblemente%20Enlazada) |
 | Lista circular simple | [Lista circular simple](Lista%20circular%20simple) |
 
-⚙️ **Modo de Operación General:**
-1. Implementación manual de estructuras enlazadas.  
-2. Inserción, eliminación y recorrido dinámico de nodos.  
-3. Evaluación del comportamiento según tipo de lista.  
 
 ---
 
