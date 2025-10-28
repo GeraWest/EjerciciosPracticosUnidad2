@@ -64,7 +64,7 @@
 
 | Elemento | Archivo |
 |-----------|----------|
-| Ejercicio práctico | [_U2ACT1 Ejercicio de Lista Enlazada Simple_](%5FU2ACT1%20Ejercicio%20de%20Lista%20Enlazada%20Simple) |
+| Ejercicio práctico | [_U2ACT1 Ejercicio de Lista Enlazada Simple_](_U2ACT1 Ejercicio de Lista Enlazada Simple con VisuAlgo_RGAM.pdf) |
 
   
 
