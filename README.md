@@ -54,7 +54,8 @@
 
 | Elemento | Archivo |
 |-----------|----------|
-| Actividad | [Dinámica_ La Lista Encantada – Versión Enlazada.pdf](Dinámica_%20La%20Lista%20Encantada%20–%20Versión%20Enlazada) |
+| Actividad |[Dinámica: La Lista Encantada – Versión Enlazada_RGAM (1)](Din%C3%A1mica_%20La%20Lista%20Encantada%20%E2%80%93%20Versi%C3%B3n%20Enlazada_RGAM%20(1).pdf)
+|
 
 
 
