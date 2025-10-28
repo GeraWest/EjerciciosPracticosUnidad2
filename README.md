@@ -2,7 +2,7 @@
 <!--  Rey Gerardo Avalos Mellado -->
 
 <p align="center">
-  <img src="banner.png" alt="REY GERARDO ÁVALOS MELLADO" width="70%">
+  <img src="banner.png" alt="REY GERARDO AVALOS MELLADO" width="70%">
 </p>
 
 <h1 align="center" style="color:#00FF00;">
@@ -65,7 +65,8 @@
 
 | Elemento | Archivo |
 |-----------|----------|
-| Ejercicio práctico | [_U2ACT1 Ejercicio de Lista Enlazada Simple_](_U2ACT1 Ejercicio de Lista Enlazada Simple con VisuAlgo_RGAM.pdf) |
+| Ejercicio práctico | [_U2ACT1 Ejercicio de Lista Enlazada Simple con VisuAlgo_RGAM](%5FU2ACT1%20Ejercicio%20de%20Lista%20Enlazada%20Simple%20con%20VisuAlgo_RGAM.pdf)
+ |
 
   
 
