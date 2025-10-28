@@ -1,0 +1,82 @@
+# 🧠 EjerPrácticosGuiados
+<!--  Rey Gerardo Avalos Mellado -->
+
+<p align="center">
+  <img src="banner.png" alt="REY GERARDO ÁVALOS MELLADO" width="70%">
+</p>
+
+<h1 align="center" style="color:#00FF00;">
+  1224100509
+</h1>
+
+---
+
+## 💀 Datos del Proyecto
+
+| 🔧 Elemento | 💣 |
+|-------------|----|
+| **Materia:** | Estructura de Datos |
+| **Autor:** | **Rey Gerardo Avalos Mellado** |
+| **Entorno:** | NetBeans / Java |
+
+---
+ 
+### 📂 Práctica Manual y Algorítmica: Listas Enlazadas (Simples, Dobles y Circulares)
+
+| Módulo | Archivo |
+|--------|----------|
+| Lista simplemente enlazada | [Lista simplemente enlazada](Lista%20simplemente%20enlazada) |
+| Lista doblemente enlazada | [Lista Doblemente Enlazada](Lista%20Doblemente%20Enlazada) |
+| Lista circular simple | [Lista circular simple](Lista%20circular%20simple) |
+
+⚙️ **Modo de Operación General:**
+1. Implementación manual de estructuras enlazadas.  
+2. Inserción, eliminación y recorrido dinámico de nodos.  
+3. Evaluación del comportamiento según tipo de lista.  
+
+---
+
+## 📘 Especificación de la Pila
+
+| Elemento | Archivo |
+|-----------|----------|
+| Documento base | [Especificación de la Pila](Especificación%20de%20la%20Pila) |
+ 
+
+---
+
+## 📚 Curso NEARPOD (LISTAS)
+
+| Elemento | Archivo |
+|-----------|----------|
+| Presentación | [Curso NEARPOD (LISTAS).pdf](Curso%20NEARPOD(LISTAS).pdf) |
+  
+
+---
+
+## 🎬 Dinámica: La Lista Encantada – Versión Enlazada
+
+| Elemento | Archivo |
+|-----------|----------|
+| Actividad | [Dinámica_ La Lista Encantada – Versión Enlazada](Dinámica_%20La%20Lista%20Encantada%20–%20Versión%20Enlazada) |
+
+
+
+---
+
+## 📄 _U2ACT1 Ejercicio de Lista Enlazada Simple_
+
+| Elemento | Archivo |
+|-----------|----------|
+| Ejercicio práctico | [_U2ACT1 Ejercicio de Lista Enlazada Simple_](%5FU2ACT1%20Ejercicio%20de%20Lista%20Enlazada%20Simple) |
+
+  
+
+---
+
+## 🕶 Autor  
+
+**Rey Gerardo Ávalos Mellado**  
+**1224100509**  
+**GTID0141**  
+💻
