@@ -54,7 +54,7 @@
 
 | Elemento | Archivo |
 |-----------|----------|
-| Actividad | [Dinámica_ La Lista Encantada – Versión Enlazada](Dinámica_%20La%20Lista%20Encantada%20–%20Versión%20Enlazada) |
+| Actividad | [Dinámica_ La Lista Encantada – Versión Enlazada.pdf](Dinámica_%20La%20Lista%20Encantada%20–%20Versión%20Enlazada) |
 
 
 
