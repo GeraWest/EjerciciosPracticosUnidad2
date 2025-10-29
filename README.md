@@ -83,6 +83,15 @@
 
 
 
+## 📄 Ordenamiento por Intercambio de Tarjetas
+
+| Elemento | Archivo |
+|-----------|----------|
+| Ejercicio práctico | [ordenamientoPorIntercambioDeTarjetas_rgam.pdf](./ordenamientoPorIntercambioDeTarjetas_rgam.pdf) |
+
+
+
+
 
 ## 🕶 Autor  
 
